@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=”viewport” contect=”width-device-width, initial-scale=1.0”>
+        <title>Qontrol index</title><link rel="stylesheet" href="./CSS/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+            <img src="../IMG/logo.webp" alt="Logo de Qontrol" width="250" height="250"></div>
+
+            <form>
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="Ej:qontrol@qontrol.com"
+                    maxlength="50"
+                    minlength="5"
+                    required>
+                <div class="input-group">
+
+                    <input 
+                        type="password" 
+                        id="password"
+                        placeholder="Contraseña"
+                        maxlength="100"
+                        minlength="8"
+                        required>
+                    <button
+                        type="button"
+                        id="mostrar"
+                        class="toggle-password">
+                        Mostrar
+                    </button>
+                
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <a href='./HTML/olvido_contra.html'>
+                <button class="sec" type="button">
+                    ¿Olvidaste la contraseña?
+                </button>
+            </a>
+
+            <div class="reg"><span>¿No tienes cuenta?</span>
+            <a href="./HTML/registro.html">
+                <button type="button">Regístrate</button>
+            </a>
+
+            </div>
+        </div>
+        <script src="./JS/inicio.js"></script>
+    </body>
+</html>

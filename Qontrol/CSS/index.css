@@ -1,0 +1,318 @@
+/* ================================
+   ESTILOS GLOBALES
+   ================================ */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   CONTENEDOR PRINCIPAL
+   ================================ */
+.container {
+  text-align: center;
+  width: 600px;
+  margin-top: 10px;
+}
+
+/* ================================
+   CÍRCULO Y LOGO
+   ================================ */
+   
+.logo {
+  margin-bottom: 10px;
+
+}
+
+
+/* ================================
+   FORMULARIO
+   ================================ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ================================
+   INPUTS
+   ================================ */
+input {
+  border: none;
+  border-bottom: 2px solid #444;
+  padding: 10px;
+  font-size: 24px;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7fa58d;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* ================================
+   GRUPO DE ENTRADA CON BOTÓN
+   ================================ */
+.input-group {
+  position: relative;
+  display: flex;
+}
+
+.input-group input {
+  flex: 1;
+  padding-right: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 5px;
+  bottom: -5px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #7fa58d;
+}
+
+.toggle-password:hover {
+  color: #2f6b2f;
+  background: none;
+  transform: none;
+}
+
+/* ================================
+   BOTONES
+   ================================ */
+button {
+  margin: 15px auto;
+  padding: 15px 45px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background: #b9d1c2;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background: #80ad8d;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ================================
+   SECCIÓN SECUNDARIA
+   ================================ */
+.sec {
+  background: #cfe8bf;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ================================
+   SECCIÓN DE REGISTRO
+   ================================ */
+.reg {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 19px;
+  color: #2f6b2f;
+}
+
+.reg button {
+  margin: 0;
+  font-size: 20px;
+  background: #b9d1c2;
+}
+
+/*PARTE DE REGISTRO*/
+.roles {
+margin-top: 10px;
+margin-bottom: -20px;
+font-size: 20px;
+}
+.rol {
+  position: absolute;
+  opacity: 0;
+  pointer-events: auto;
+  
+}
+.select_button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.checkmark {
+  width: 15px;
+  height: 15px;
+  background-color: #d6e4db;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  position: relative; 
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px; 
+  background-color: #2f6b2f;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.rol:checked + .select_button .checkmark::after {
+  opacity: 1;
+}
+.rol:checked + .select_button {
+  color: black;
+  font-weight: 700;
+}
+svg {
+  width: 20px;
+  height: auto;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+/*OLVIDO CONTRA 1*/
+.olvido-contra-p {
+  display: inline-block;
+  justify-content: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-size: 20px;
+  color: #2f6b2f;
+}
+p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+.logo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.input-olv {
+  margin-top: 90px;
+}
+.button-olv {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*ENLACE*/
+.enlace {
+  color: #5c8969;
+  text-decoration: none
+}
+.enlace:hover {
+  color: #2f6b2f;
+}
+.enlace:focus {
+  color: #2f6b2f;
+}
+.enlace:active {
+  color: #193919;
+}
+/* Icono */
+.icono-codigo {
+    width: 100px;
+    height: 80px;
+    border: 2px solid #b6dca9;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-bottom: -20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.icono-codigo span {
+    width: 55%;
+    height: 35px;
+
+    border: 7px solid #333;
+    border-radius:10px;
+
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+    font-size: 28px;
+    font-weight: 750;
+    color: #333;
+}
+.no-llego-contra {
+  display: block;
+  color: black;
+  margin-top: -10px;
+}
+/*OLVIDO CONTRA 3*/
+.icono-codigo-2 {
+    width: 100px;
+    height: 90px;
+    border: 2px solid #b6dca9;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-bottom: -20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icono-codigo-2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 70px;
+    font-weight: 500;
+    color: #333;
+}
+.input-olv-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.button-olv-2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

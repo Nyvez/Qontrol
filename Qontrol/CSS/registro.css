@@ -1,0 +1,159 @@
+/* ================================
+   ESTILOS GLOBALES
+   ================================ */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   CONTENEDOR PRINCIPAL
+   ================================ */
+.container {
+  width: 650px;
+  padding: 30px;
+}
+
+/* ================================
+   LOGO
+   ================================ */
+.logo {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  max-height: 170px;
+  width: auto;
+}
+
+/* ================================
+   TARJETA DE FORMULARIO
+   ================================ */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ================================
+   INPUTS
+   ================================ */
+input {
+  border: none;
+  border-bottom: 3px solid #444;
+  padding: 12px;
+  font-size: 24px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #7fa58d;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* ================================
+   GRUPO DE ENTRADA CON BOTÓN
+   ================================ */
+.input-group {
+  position: relative;
+  display: flex;
+}
+
+.input-group input {
+  flex: 1;
+  padding-right: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 5px;
+  bottom: -11px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #444;
+}
+
+.toggle-password:hover {
+  color: #7fa58d;
+  background: none;
+  transform: none;
+}
+
+/* ================================
+   ROLES
+   ================================ */
+.rol {
+  text-align: center;
+  color: #2d6b38;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.roles {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  gap: 15px;
+}
+
+/* ================================
+   BOTONES
+   ================================ */
+button {
+  margin: 20px auto;
+  padding: 15px 45px;
+  background: #b9d1c2;
+  border: 2px solid #444;
+  border-radius: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #a1c1aa;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ================================
+   MENSAJE DE ERROR
+   ================================ */
+.error-message {
+  display: none;
+  background: #ffebee;
+  color: #c62828;
+  border: 2px solid #c62828;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -15px;
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name=”viewport” contect=”width-device-width, initial-scale=1.0”>
+        <title>Registro</title><link rel='stylesheet' href='../CSS/index.css'>
+    </head>
+    <body>
+        <div class='container'>
+
+        <div class='logo'>
+            <img src='../IMG/logo.webp' alt='Logo' width='250' height='250'>
+        </div>
+
+        <form class='card'>
+            <input 
+                type="email"
+                id="email" 
+                placeholder='Ej:qontrol@qontrol.com'
+                maxlength="50"
+                minlength="5"
+                required>
+            <div class="input-group">
+                <input 
+                    type='password' 
+                    id="password1"
+                    placeholder='Contraseña'
+                    maxlength="100"
+                    minlength="8"
+                    required>
+                <button
+                    type="button"
+                    id="mostrar1"
+                    class="toggle-password">
+                    Mostrar
+                </button>
+            </div>
+            <div class="input-group">
+                <input 
+                    type="password" 
+                    id="password2"
+                    placeholder="Confirma tu contraseña"
+                    maxlength="100"
+                    minlength="8"
+                    required>
+                <button
+                    type="button"
+                    id="mostrar2"
+                    class="toggle-password">
+                    Mostrar
+                </button>
+            </div>
+
+        <input type='text' placeholder='Nombre completo' required>
+        <p class='rol'>Ingresa tu rol.</p>
+
+        <div class='roles'>
+            <input type='radio' class='rol' id='admin' name="rol">
+            <label for='admin' class="select_button">
+                <span class="checkmark"></span>Administrador</label
+            >
+            
+            <input type='radio' class='rol' id='supervisor' name="rol">
+            <label for='supervisor' class="select_button">
+                <span class="checkmark"></span>Supervisor</label
+            >
+
+            <input type='radio' class='rol' id='bodega' name="rol">
+            <label for='bodega' class="select_button">
+                <span class="checkmark"></span>Bodega</label
+            >
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+        <button type="submit">Registrarme</button>
+        </form>
+        <footer>
+            <p>Ten en cuenta que esta plataforma es privada y por lo tanto es de uso exclusivo para personal autorizado.</p>
+        </footer>
+        <script src="../JS/registro.js"></script>
+    </body>
+</html>
